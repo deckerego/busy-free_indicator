@@ -182,7 +182,7 @@ def shader_christmas(frame, timeout_segments):
 
 # Constants
 SECONDS_PER_CLICK = 60 * 15
-SHADERS = [shader_christmas, shader_rotate, shader_breathe, shader_sparkle, shader_rainbow]
+SHADERS = [shader_rotate, shader_breathe, shader_sparkle, shader_rainbow, shader_christmas]
 
 # Default state
 power = switch_state
