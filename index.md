@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+# DeckerEgo Corp Thanks You
 
-You can use the [editor on GitHub](https://github.com/deckerego/busy-free_indicator/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+The Busy/Free Desk Indicator 2021 Edition was constructed to provide an easy way for your roommate, spouse, or cat to identify if you are busy at your desk or if you are free to be interrupted with a question about something you already answered like fifty seconds ago.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## User Manual
 
-### Markdown
+For instructions and guidance concerning the Busy/Free Desk Indicator 2021 Edition, review our [easy-to-use user manual](https://docs.google.com/document/d/1Aq5RcLSJUTe7unPQ9NFNM568gAli1XiDiWOW0XTifgc/).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Updates
 
-```markdown
-Syntax highlighted code block
+DeckerEgo Corp may offer free upgrades to The Busy/Free Desk Indicator 2021 Edition. Here's the latest:
 
-# Header 1
-## Header 2
-### Header 3
+### 2020-11-28
 
-- Bulleted
-- List
+Download: [Version 1.1.1](https://github.com/deckerego/busy-free_indicator/releases/download/1.1.1/CIRCUITPY.zip)
 
-1. Numbered
-2. List
+    Added a holiday wreath shader!
 
-**Bold** and _Italic_ and `Code` text
+## Build Your Own
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/deckerego/busy-free_indicator/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Want to build your own Busy/Free Desk Indicator 2021 Edition? Full instructions are available at our [Hackaday.io Page](https://hackaday.io/project/175732-busyfree-desk-indicator)!
