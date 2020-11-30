@@ -168,16 +168,16 @@ def shader_christmas(frame, timeout_segments):
         leafs = [0, 2, 4, 5, 7, 9]
         berries = [1, 3, 6, 8]
         for leaf in leafs:
-            pixels[leaf] = (12, 228, 6)
+            pixels[leaf] = (12, 190, 10)
         for berry in berries:
             shimmer = random.randrange(30) + 10
-            pixels[berry] = (164, shimmer, shimmer)
+            pixels[berry] = (158, shimmer, shimmer)
     else:
         for pixel in range(timeout_segments, 10):
-            shimmer = random.randrange(40) + 15
-            pixels[pixel] = (248, shimmer, shimmer)
+            shimmer = random.randrange(35) + 15
+            pixels[pixel] = (232, shimmer, shimmer)
         for pixel in range(timeout_segments):
-            pixels[pixel] = (255, 0, 0)
+            pixels[pixel] = (248, 0, 0)
     return 0.1
 
 # Constants
