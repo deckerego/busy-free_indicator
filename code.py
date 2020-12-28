@@ -163,26 +163,33 @@ def shader_rainbow(frame, timeout_segments):
         pixels[pixel] = (204, 61, 61)
     return 0.05
 
-def shader_christmas(frame, timeout_segments):
-    if(timeout_segments <= 0):
-        leafs = [0, 2, 4, 5, 7, 9]
-        berries = [1, 3, 6, 8]
-        for leaf in leafs:
-            pixels[leaf] = (12, 190, 10)
-        for berry in berries:
-            shimmer = random.randrange(30) + 10
-            pixels[berry] = (158, shimmer, shimmer)
+def shader_firework(frame, timeout_segments):
+    color1 = (0, 0, 0)
+    color2 = (0, 0, 0)
+
+    if timeout_segments <= 0:
+        color1 = (random.randrange(64), random.randrange(96), random.randrange(160))
+        color2 = (random.randrange(64), random.randrange(96), random.randrange(160))
     else:
+        color1 = (64 + random.randrange(164), random.randrange(24), random.randrange(64))
+        color2 = (64 + random.randrange(164), random.randrange(24), random.randrange(64))
+
+    if frame % 2 is 0:
         for pixel in range(timeout_segments, 10):
-            shimmer = random.randrange(35) + 15
-            pixels[pixel] = (232, shimmer, shimmer)
+            if timeout_segments > 0 or frame > 2:
+                gamma = 1 - (LOG[frame - 1] / LOG[10])
+                color = color1 if pixel % 2 is 0 else color2
+                pixels[pixel] = list(map(lambda c: math.ceil(gamma * c), color))
+            else:
+                pixels[pixel] = (0, 0, 0)
         for pixel in range(timeout_segments):
             pixels[pixel] = (248, 0, 0)
-    return 0.1
+    return 0.05
 
 # Constants
 SECONDS_PER_CLICK = 60 * 15
-SHADERS = [shader_rotate, shader_breathe, shader_sparkle, shader_rainbow, shader_christmas]
+LOG = [0.0, 0.0, 0.6931, 1.0986, 1.3863, 1.6094, 1.7918, 1.9459, 2.0794, 2.1972, 2.3026]
+SHADERS = [shader_rotate, shader_breathe, shader_sparkle, shader_rainbow, shader_firework]
 
 # Default state
 power = switch_state
