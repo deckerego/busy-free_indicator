@@ -14,7 +14,8 @@ DeckerEgo Corp may offer free upgrades to The Busy/Free Desk Indicator 2021 Edit
 
 Download: [Version 1.2.0](https://github.com/deckerego/busy-free_indicator/releases/download/1.2.0/CIRCUITPY.ZIP)
 
-    Added a new fireworks shader to replace the holiday wreath. Glittery explosions in desktop form.
+    Added a new fireworks shader to replace the holiday
+    wreath. Glittery explosions in desktop form.
 
 ### 2020-11-30
 
