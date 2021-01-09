@@ -9,7 +9,7 @@ Button A increments the busy indicator by 15 minutes on each press, button B dec
 
 All this build needs is an [Adafruit Circuit Playground Express](https://www.adafruit.com/product/3333), a USB cable, and optionally an [enclosure](https://www.adafruit.com/product/3333) to make it look cool.
 
-Right now CircuitPython 6.x has an issue with mounting USB storage that causes code to halt if the Circuit Playground is mounted in read-only mode. To avoid this, either remove boot.py from the CIRCUITPY mount point or install [CircuitPython 5.3](https://adafruit-circuit-python.s3.amazonaws.com/bin/circuitplayground_express/en_US/adafruit-circuitpython-circuitplayground_express-en_US-5.3.1.uf2) instead.
+-> ***Right now CircuitPython 6.x has an issue with mounting USB storage*** <- that causes code to halt if the Circuit Playground is mounted in read-only mode. To avoid this, either remove boot.py from the CIRCUITPY mount point or install [CircuitPython 5.3](https://adafruit-circuit-python.s3.amazonaws.com/bin/circuitplayground_express/en_US/adafruit-circuitpython-circuitplayground_express-en_US-5.3.1.uf2) instead.
 
 See the [hackaday.io Project Page](https://hackaday.io/project/175732-busyfree-desk-indicator) for build instructions.
 
