@@ -10,6 +10,15 @@ For instructions and guidance concerning the Busy/Free Desk Indicator 2021 Editi
 
 DeckerEgo Corp may offer free upgrades to The Busy/Free Desk Indicator 2021 Edition. Here's the latest:
 
+### 2021-01-08
+
+Download: [Version 1.2.1](https://github.com/deckerego/busy-free_indicator/releases/download/1.2.1/CIRCUITPY.ZIP)
+
+    Updated the "breathe" shader animation to make it
+    look a bit more calming.
+
+    Breathe in... breathe out...
+
 ### 2020-12-28
 
 Download: [Version 1.2.0](https://github.com/deckerego/busy-free_indicator/releases/download/1.2.0/CIRCUITPY.ZIP)
