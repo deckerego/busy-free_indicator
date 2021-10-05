@@ -24,6 +24,21 @@ While the busy indicator is on, you can press the “B” button to decrement th
 
 Pressing the "B" button while idle will change the LED animation cycle to something more interesting or annoying.
 
+## Installing
+
+First make sure that your Circuit Playground Express has the
+[latest version of CircuitPython installed](https://circuitpython.org/board/adafruit_macropad_rp2040/).
+See [https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-quickstart](https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-quickstart)
+for instructions on how to update the Circuit Playground Express to have the latest version of
+CircuitPython.
+
+When installing the Busy/Free Indicator for the first time, extract the latest
+[CIRCUITPY.ZIP](https://github.com/deckerego/busy-free_indicator/releases/latest)
+into a directory, then copy the contents of that extracted archive
+into the CIRCUITPY drive that appears when you plug in your Circuit Playground Express.
+Ensure that the contents of the `lib/` subdirectory are also copied - these are
+the precompiled Adafruit libraries that power the Playground Express.
+
 
 ## Updating the Software
 

@@ -164,33 +164,10 @@ def shader_rainbow(frame, timeout_segments):
         pixels[pixel] = (204, 61, 61)
     return 0.05
 
-def shader_firework(frame, timeout_segments):
-    color1 = (0, 0, 0)
-    color2 = (0, 0, 0)
-
-    if timeout_segments <= 0:
-        color1 = (random.randrange(64), random.randrange(96), random.randrange(160))
-        color2 = (random.randrange(64), random.randrange(96), random.randrange(160))
-    else:
-        color1 = (64 + random.randrange(164), random.randrange(24), random.randrange(64))
-        color2 = (64 + random.randrange(164), random.randrange(24), random.randrange(64))
-
-    if frame % 2 is 0:
-        for pixel in range(timeout_segments, 10):
-            if timeout_segments > 0 or frame > 2:
-                gamma = 1 - LOG_10[frame - 1]
-                color = color1 if pixel % 2 is 0 else color2
-                pixels[pixel] = list(map(lambda c: math.ceil(gamma * c), color))
-            else:
-                pixels[pixel] = (0, 0, 0)
-        for pixel in range(timeout_segments):
-            pixels[pixel] = (248, 0, 0)
-    return 0.05
-
 # Constants
 SECONDS_PER_CLICK = 900
 LOG_10 = [0.0, 0.3010, 0.4771, 0.6021, 0.6990, 0.7782, 0.8451, 0.9031, 0.9542, 1.0]
-SHADERS = [shader_rotate, shader_breathe, shader_sparkle, shader_rainbow, shader_firework]
+SHADERS = [shader_rotate, shader_breathe, shader_sparkle, shader_rainbow]
 
 # Default state
 power = switch_state
